@@ -19,29 +19,6 @@
 	line-height: 95px;
 	}
 
-.w-portfolio-item-anchor:after {
-	border-left-width: 16px;
-	border-right-width: 16px;
-	border-bottom-width: 16px;
-	margin-left: -16px;
-	}
-}
-
-
-/***** Width: 0-1300 **********************************/
-@media (max-width: 1300px) {
-
-.w-clients {
-	padding: 0 40px;
-	}
-	.w-clients-nav.to_next {
-		right: -55px;
-		}
-	.w-clients-nav.to_prev {
-		left: -55px;
-		}
-}
-
 
 /***** Width: 0-1279 **********************************/
 @media (max-width: 1279px) {
@@ -77,19 +54,6 @@
 	font-size: 15px;
 	padding: 0 16px;
 	}
-
-.w-portfolio-item {
-	width: 33.3333%;
-	}
-
-#prevslide {
-	left: 20px;
-	}
-#nextslide {
-	right: 20px;
-	}
-}
-
 
 /***** Width: 0-1023 **********************************/
 @media (max-width: 1023px) {
@@ -199,65 +163,6 @@ button.g-btn.size_big {
 	top: 50px;
 	}
 
-.w-portfolio-item {
-	width: 50%;
-	}
-	.w-portfolio-item-details-h {
-		padding: 50px;
-		}
-		.w-portfolio-item-details-content-preview {
-			float: none;
-			margin-right: 0;
-			margin-bottom: 30px;
-			width: 100%;
-			}
-		.w-portfolio-item-details-content-text {
-			float: none;
-			width: 100%;
-			}
-		.w-portfolio-item-details-close {
-			line-height: 50px;
-			height: 50px;
-			width: 50px;
-			}
-		.w-portfolio-item-details-arrow {
-			width: 50px;
-			}
-			.w-portfolio-item-details-arrow i {
-				line-height: 50px;
-				height: 50px;
-				width: 50px;
-				margin-top: -25px;
-				}
-
-.w-team-member {
-	width: 33.3333%;
-	}
-	.w-team-member-meta {
-		position: relative;
-		top: 0;
-		height: auto;
-		opacity: 1;
-		}
-		.w-team-member-name {
-			font-size: 20px;
-			line-height: 28px;
-			margin: 0;
-			}
-		.w-team-member-role {
-			font-size: 15px;
-			line-height: 22px;
-			}
-		.w-team-member-links {
-			margin-top: 10px;
-			}
-
-.w-testimonials-item {
-	width: 100%;
-	}
-}
-
-
 /***** Width: 0-959 **********************************/
 @media (max-width: 959px) {
 
@@ -332,18 +237,6 @@ button.g-btn.size_big {
 
 .w-logo-title {
 	font-size: 22px;
-	}
-
-.w-portfolio-item-title {
-	font-size: 18px;
-	line-height: 24px;
-	}
-.w-portfolio-item-meta {
-	padding: 50px 20px 20px;
-	}
-
-.w-team-member {
-	width: 50%;
 	}
 
 .w-toplink {
@@ -459,46 +352,6 @@ button.g-btn.size_big {
 .l-subheader .w-nav.touch_enabled .w-nav-list.level_1 {
 	padding: 0 6%;
 	}
-
-.w-portfolio-item {
-	width: 100%;
-	}
-	.w-portfolio-item-details-h {
-		padding: 8%;
-		}
-		.w-portfolio-item-details-arrow,
-		.w-portfolio-item-details-content-preview {
-			display: none;
-			}
-		.w-portfolio-item-details-content-text h1:first-child,
-		.w-portfolio-item-details-content-text h2:first-child,
-		.w-portfolio-item-details-content-text h3:first-child,
-		.w-portfolio-item-details-content-text h4:first-child,
-		.w-portfolio-item-details-content-text h5:first-child,
-		.w-portfolio-item-details-content-text h6:first-child {
-			padding-right: 40px;
-			}
-
-.l-footer .w-socials {
-	float: none;
-	text-align: center;
-	}
-
-.w-testimonial-text {
-	font-size: 16px;
-	line-height: 24px;
-	padding: 20px;
-	}
-	.w-testimonial-person {
-		font-size: 14px;
-		line-height: 22px;
-		padding-left: 20px;
-		}
-		.w-testimonial-person:after,
-		.w-testimonial-person:before {
-			left: 20px;
-			}
-}
 
 
 /***** Width: 0-479 **********************************/
