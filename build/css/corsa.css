@@ -221,14 +221,15 @@ a {
 
 /* HOMETYPE: fullscreen */
 .l-body.hometype_fullscreen .l-section:first-child {
-	height: 100%;
 	width: 100%;
+	height: 100%;
+	min-height: 650px;
 	}
 	.l-body.hometype_fullscreen .l-section:first-child .l-subsection {
 		display: table;
 		height: 100%;
 		width: 100%;
-		padding: 0;
+		padding: 70px 0 0;
 		overflow: hidden;
 		}
 		.l-body.hometype_fullscreen .l-section:first-child .l-subsection-h {
