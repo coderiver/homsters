@@ -240,4 +240,39 @@ $(document).ready(function() {
 			}, 40);
 	}, {offset: '85%', triggerOnce: true});
 
+	// form validation
+	(function() {
+		var thanks = $('.js-thanks-popup');
+		// welcome
+		$.validate({
+			form: '#contacts',
+			onSuccess: function() {
+				post_data = {
+					'name': $('#contacts input[name=name]').val(),
+					'email': $('#contacts input[name=email]').val(),
+					'comment': $('#contacts input[name=comment]').val()
+				};
+				// Ajax post data to server
+				$.post('send.php', post_data, function(response) {
+					if (response.type == 'error') {
+						console.log('error');
+					}
+					else {
+						thanks.fadeIn(300);
+						$('#contacts').get(0).reset();
+						setTimeout(function() {
+							thanks.fadeOut(300);
+						}, 2000);
+					}
+				}, 'json');
+				return false;
+			}
+		});
+	}());
+
+	$('.js-close').click(function(e) {
+		e.preventDefault();
+		$(this).parents('.js-popup').fadeOut(300);
+	});
+
 });

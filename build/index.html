@@ -634,27 +634,27 @@
 					<div class="l-subsection-h">
 						<div class="l-subsection-hh i-cf">
 							<h2><strong>LET’S UPGRADE<br> THE REAL ESTATE INDUSTRY</strong></h2>
-							<div class="w-form">
+							<form class="w-form" id="contacts">
 								<div class="g-form-row">
 									<p>Name</p>
 									<label class="g-form-row-label">
-										<input type="text" placeholder="type your name">
+										<input type="text" name="name" placeholder="type your name" data-validation="required">
 									</label>
 								</div>
 								<div class="g-form-row">
 									<p>E-mail or phone</p>
 									<label class="g-form-row-label">
-										<input type="text" placeholder="type your e-mail/phone">
+										<input type="text" name="email" placeholder="type your e-mail/phone" data-validation="required">
 									</label>
 								</div>
 								<div class="g-form-row">
 									<p>Your Enquiry</p>
 									<label class="g-form-row-label">
-										<textarea type="text" placeholder="type your enquiry"></textarea>
+										<textarea type="text" name="comment" placeholder="type your enquiry"></textarea>
 									</label>
 								</div>
 								<button class="g-btn type_primary" type="send"><span>Send</span></button>
-							</div>
+							</form>
 							<div class="g-hr type_invisible"></div>
 							<div class="g-cols">
 								<div class="one-sixth">
@@ -733,8 +733,13 @@
 	</div>
 	<!-- /FOOTER -->
 	<a class="w-toplink" href="#"><i class="fa fa-chevron-up"></i></a>
-
 </div>
 <!-- END out-->
+<div class="popup js-popup js-thanks-popup">
+	<div class="popup__in">
+		<a href="#" class="popup__close js-close"><i class="fa fa-times"></i></a>
+		<p>THANK YOU FOR CONTACING US,<br> WE WILL CONTACT YOU SOON!</p>
+	</div>
+</div>
 </body>
 </html>

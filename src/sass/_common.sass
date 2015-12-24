@@ -1,25 +1,25 @@
 // # SHORT HOWTO
 // ## Sprites
-//     .whatever
+//	 .whatever
 // 			+s(codedby)
 // ## gradient example
-//     	+g(#232323, #5c5c5c);
+//	 	+g(#232323, #5c5c5c)
 //	   horizontal
-//     	+gh(#232323, #5c5c5c);
+//	 	+gh(#232323, #5c5c5c)
 // ## making bw-images
-//     img
+//	 img
 //			@extend %gray
 // ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     +r(320)
+//	 +r(320)
 //			display: none
 // +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
 //
 // ## use cycles
-//     @for $i from 1 through 3
-//       .item-#{$i}
-//			width: 2em * $i;
-//     @each $s in a,b,c
-// 	    	#{$s}
+//	 @for $i from 1 through 3
+//	   .item-#{$i}
+//			width: 2em * $i
+//	 @each $s in a,b,c
+// 			#{$s}
 //				display: none
 // ## fonts
 // Save fonts to /src/fonts
@@ -36,3 +36,43 @@ body
 // common blocks
 .out
 	min-width: 320px
+
+.popup
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	min-width: 320px
+	height: 100%
+	padding: 20px
+	background: rgba(#000, 0.75)
+	overflow: auto
+	white-space: nowrap
+	z-index: 100
+	+vertical
+	&__in
+		position: relative
+		display: inline-block
+		width: 100%
+		max-width: 400px
+		padding: 100px 0
+		background: #FFF
+		color: #444
+		border-radius: 4px
+		white-space: normal
+		vertical-align: middle
+		p
+			font-size: 25px
+			font-weight: 600
+			font-family: 'Dosis', sans-serif
+			line-height: 1.5
+	&__close
+		position: absolute
+		top: -30px
+		right: 0
+		font-size: 20px
+		line-height: 1
+		color: #fff
+		&:hover
+			color: #31C5C7
