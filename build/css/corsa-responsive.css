@@ -15,8 +15,8 @@
 		}
 
 .g-html h1.home-heading {
-	font-size: 85px;
-	line-height: 95px;
+	font-size: 67px;
+	line-height: 67px;
 	}
 
 
@@ -54,8 +54,8 @@
 
 @media (max-width: 1279px), (max-height: 820px) {
 	.g-html h1.home-heading {
-		font-size: 75px;
-		line-height: 75px;
+		font-size: 60px;
+		line-height: 60px;
 	}
 }
 
